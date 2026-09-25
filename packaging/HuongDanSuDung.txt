@@ -1,0 +1,70 @@
+﻿=======================================================
+   HƯỚNG DẪN SỬ DỤNG: VÒNG QUAY MAY MẮN (WINDOWS OFFLINE)
+=======================================================
+
+CÁC FILE TRONG THƯ MỤC NÀY:
+- VongQuayMayMan.exe                      : Bản Portable - nhấp đúp là chạy, không cần cài đặt.
+- VongQuayMayMan_Setup.exe                : Bản cài đặt - tạo biểu tượng Desktop và Start Menu.
+- KhoiDong_VongQuay.bat                   : Dùng khi nhấp đúp file .exe mà KHÔNG mở được (máy Windows 10 cũ thiếu WebView2). File này tự tải và cài WebView2 giúp bạn.
+- Chay_Che_Do_Tuong_Thich.bat             : Dùng khi ứng dụng mở lên nhưng bị giật / nháy / màn hình trắng (máy yếu hoặc driver đồ hoạ lỗi).
+- Go_Chan_Bao_Mat_Cua_Windows.bat         : Dùng khi Windows báo "Windows protected your PC" do file tải từ Internet.
+- THONG_TIN_PHIEN_BAN.txt                 : Thông tin phiên bản và tình trạng chữ ký số.
+
+---
+
+1. BẮT ĐẦU:
+- Nhấp đúp vào file "VongQuayMayMan.exe" để mở ứng dụng ngay (bản Portable, không cần cài đặt).
+- Hoặc chạy "VongQuayMayMan_Setup.exe" nếu muốn tạo biểu tượng trên Desktop.
+- Ứng dụng hoạt động 100% OFFLINE khi sử dụng, không cần kết nối mạng/Wifi.
+
+2. NẾU NHẤP ĐÚP MÀ ỨNG DỤNG KHÔNG MỞ LÊN (máy Windows 10 đời cũ):
+- Nhấp đúp vào "KhoiDong_VongQuay.bat". File này sẽ:
+    1) Kiểm tra máy đã có Microsoft Edge WebView2 chưa.
+    2) Nếu chưa có, tự tải về và cài đặt (CẦN INTERNET, mất khoảng 1-2 phút).
+    3) Sau đó tự mở ứng dụng.
+- Nếu máy không có Internet: hãy nhờ thầy/cô phụ trách kỹ thuật cài
+  "Microsoft Edge WebView2 Evergreen Standalone Installer" (tải từ
+  https://developer.microsoft.com/microsoft-edge/webview2/ ), sau đó chạy lại
+  "VongQuayMayMan.exe" bình thường.
+
+3. NẾU WINDOWS CHẶN KHI TẢI HOẶC KHI CHẠY:
+- Windows bảo vệ người dùng bằng cách đánh dấu file tải từ Internet ("Mark of the Web")
+  và có thể hiện cảnh báo "Windows protected your PC".
+- Cách 1 (khuyến nghị): nhấp đúp "Go_Chan_Bao_Mat_Cua_Windows.bat" trong thư mục này.
+- Cách 2: nhấp chuột phải vào file .exe -> Properties -> tích "Unblock" -> OK.
+- Cách 3: trong cửa sổ cảnh báo, chọn "More info" -> "Run anyway".
+
+4. CÁC CÁCH NHẬP DANH SÁCH:
+- Nút "Nhập Excel": Chọn file danh sách lớp (.xlsx, .xls, .csv). Ứng dụng sẽ tự tìm cột Họ tên và hiển thị xem trước.
+- Nút "Quay Số": Nhập số lượng học sinh (ví dụ: 1 đến 45) hoặc chọn nhanh 35, 40, 45 bạn.
+- Nút "Dán danh sách": Dán danh sách tên học sinh (mỗi bạn một dòng) từ Zalo, Word...
+
+5. CÁCH BẮT ĐẦU QUAY:
+- Nhấp chuột trực tiếp vào Vòng quay (hoặc tâm tròn chữ QUAY).
+- Hoặc nhấn phím SPACE (Phím cách) trên bàn phím.
+- Phím F11: Bật / Tắt chế độ toàn màn hình cho máy chiếu.
+- Phím ESC: Đóng hộp thoại kết quả.
+
+6. THỜI GIAN VÀ HIỆU ỨNG QUAY:
+- Mặc định thời gian quay là 15 GIÂY (kết hợp hiệu ứng tăng tốc, quay nhanh, đèn LED đuổi vòng quanh và giảm tốc bò chậm dần siêu kịch tính).
+- Thầy cô có thể tùy chỉnh thời gian quay (từ 3 giây đến 60 giây) bằng cách nhấp trực tiếp vào nút "Quay: 15s" phía trên vòng quay hoặc trong biểu tượng Cài đặt (bánh răng).
+
+7. SAU KHI QUAY TRÚNG:
+- Bạn có thể chọn "Loại khỏi vòng quay" để không gọi trùng bạn đó trong buổi học.
+- Hoặc chọn "Giữ lại quay tiếp".
+- Danh sách những bạn đã được gọi sẽ lưu ở tab "Đã gọi" bên phải.
+- Có nút xuất kết quả ra file Excel ở góc trên danh sách.
+
+8. MÁY TÍNH CẤU HÌNH THẤP (KHÔNG CÓ CARD ĐỒ HOẠ RỜI):
+- Ứng dụng tự nhận biết cấu hình máy và tự giảm hiệu ứng để chạy mượt.
+- Nếu vẫn thấy giật, vào Cài đặt (bánh răng) -> "Chế độ đồ họa" -> chọn "Thấp / Siêu nhẹ".
+- Muốn xem máy đang chạy bao nhiêu FPS: Cài đặt -> bật "Hiện chỉ số FPS".
+- Nếu màn hình bị nháy hoặc trắng: dùng "Chay_Che_Do_Tuong_Thich.bat".
+
+9. LƯU Ý HỆ THỐNG:
+- Ứng dụng chạy tối ưu trên Windows 10 và Windows 11.
+- Ứng dụng cần Microsoft Edge WebView2. Windows 11 và Windows 10 đã cập nhật đã có sẵn.
+  Nếu máy chưa có, xem mục 2 ở trên để tự động tải và cài.
+- Dữ liệu danh sách học sinh được lưu tự động trên máy tính, lần sau mở app vẫn còn nguyên.
+
+Chúc thầy cô và các em học sinh có những tiết học vui vẻ và hào hứng!
